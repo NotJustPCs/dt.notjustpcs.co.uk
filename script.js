@@ -20,6 +20,7 @@ function WriteLinks(IDtoWrite) {
 	WLlinks = WLlinks + WriteOneLink("https://developers.google.com/speed/pagespeed/insights/?url=","&tab=desktop",document.getElementById('DomainName').value,"google","Google PageSpeed Tools")
 	WLlinks = WLlinks + WriteOneLink("https://moz.com/researchtools/ose/links?site=","",document.getElementById('DomainName').value,"bar-chart","Domain Authority rank")
 	WLlinks = WLlinks + WriteOneLink("http://quirktools.com/screenfly/#u=http%3A//","&w=320&h=568&a=37",document.getElementById('DomainName').value,"tablet","Open website (as an iPhone 5)")
+	WLlinks = WLlinks + WriteOneLink("http://www.tcpiputils.com/domain-neighbors/","",document.getElementById('DomainName').value,"road","Domain Neighbours")
 	WLlinks = WLlinks + WriteOneLink("http://dt.notjustpcs.co.uk/?","",document.getElementById('DomainName').value,"link","Shortcut this page")
 	document.getElementById(IDtoWrite).innerHTML = WLlinks;
 }

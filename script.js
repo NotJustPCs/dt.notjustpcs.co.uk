@@ -11,12 +11,12 @@ function WriteOneLink(URLprefix,URLsuffix,TelNo,FAicon,LinkDesc) {
 }
 
 function WriteLinks(IDtoWrite) {
-	WLlinks = WriteOneLink("https://www.facebook.com/search/top/?q=","",document.getElementById('PhoneNum').value,"facebook","Facebook");
-	WLlinks = WLlinks + WriteOneLink("https://www.google.co.uk/#q=","",document.getElementById('PhoneNum').value,"google","Google")
-	WLlinks = WLlinks + WriteOneLink("https://contacts.google.com/u/0/preview/search/","",document.getElementById('PhoneNum').value,"address-book-o","Google Contacts")
-	WLlinks = WLlinks + WriteOneLink("https://portal.aql.com/telecoms/network_lookup.php?number=","&nlSubmit=submit",document.getElementById('PhoneNum').value,"sitemap","Current supplier")
-	WLlinks = WLlinks + WriteOneLink("https://www.ukphoneinfo.com/area-code/","",document.getElementById('PhoneNum').value.substring(0, 5),"map-pin","Area code lookup")
-	WLlinks = WLlinks + WriteOneLink("tel:","",document.getElementById('PhoneNum').value,"phone","Call number")
-	WLlinks = WLlinks + WriteOneLink("http://pt.notjustpcs.co.uk/?","",document.getElementById('PhoneNum').value,"link","Shortcut this page")
+	WLlinks = WriteOneLink("http://","",document.getElementById('DomainName').value,"globe","Open the website");
+	WLlinks = WLlinks + WriteOneLink("https://isitup.org/","",document.getElementById('DomainName').value,"podcast","Make sure the website is up")
+	WLlinks = WLlinks + WriteOneLink("http://","/wp-admin",document.getElementById('DomainName').value,"wordpress","WordPress login")
+	WLlinks = WLlinks + WriteOneLink("http://","/admin",document.getElementById('DomainName').value,"code-fork","/admin")
+	WLlinks = WLlinks + WriteOneLink("http://","/administrator",document.getElementById('DomainName').value.substring(0, 5),"code-fork","/administrator")
+	WLlinks = WLlinks + WriteOneLink("http://","/cpanel",document.getElementById('DomainName').value,"cogs","cPanel")
+	WLlinks = WLlinks + WriteOneLink("http://dt.notjustpcs.co.uk/?","",document.getElementById('DomainName').value,"link","Shortcut this page")
 	document.getElementById(IDtoWrite).innerHTML = WLlinks;
 }

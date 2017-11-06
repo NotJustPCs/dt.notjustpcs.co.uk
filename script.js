@@ -26,6 +26,7 @@ function WriteLinks(IDtoWrite) {
 	WLlinks = WLlinks + WriteOneLink("https://mxtoolbox.com/archive/?actionstring=mx:","&run=networktools",document.getElementById('DomainName').value,"envelope","MX Toolbox")
 	WLlinks = WLlinks + WriteOneLink("https://mxtoolbox.com/archive/?actionstring=blacklist:","",document.getElementById('DomainName').value,"ban","Blacklist check (MX Toolbox)")
 	WLlinks = WLlinks + WriteOneLink("https://mxtoolbox.com/SuperTool.aspx?action=https%3a","&run=toolpage",document.getElementById('DomainName').value,"lock","MX Toolbox (SSL Check)")
+	WLlinks = WLlinks + WriteOneLink("https://www.ssllabs.com/ssltest/analyze.html?d=","&hideResults=on&latest",document.getElementById('DomainName').value,"shield","SSL Server Test")
 	WLlinks = WLlinks + WriteOneLink("http://toolbar.netcraft.com/site_report?url=","",document.getElementById('DomainName').value,"list","Netcraft Site Report")
 	WLlinks = WLlinks + WriteOneLink("http://web.archive.org/web/*/","",document.getElementById('DomainName').value,"clock-o","Wayback Machine")
 	WLlinks = WLlinks + WriteOneLink("https://sitecheck.sucuri.net/results/","",document.getElementById('DomainName').value,"bug","Sucuri Scan")

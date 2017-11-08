@@ -15,7 +15,7 @@ function WriteLinks(IDtoWrite) {
 	WLlinks = WLlinks + WriteOneLink("https://isitup.org/","",document.getElementById('DomainName').value,"podcast","Make sure the website is up")
 	WLlinks = WLlinks + WriteOneLink("http://","/wp-admin",document.getElementById('DomainName').value,"wordpress","WordPress login")
 	WLlinks = WLlinks + WriteOneLink("http://","/admin",document.getElementById('DomainName').value,"code-fork","/admin")
-	WLlinks = WLlinks + WriteOneLink("http://","/administrator",document.getElementById('DomainName').value.substring(0, 5),"code-fork","/administrator")
+	WLlinks = WLlinks + WriteOneLink("http://","/administrator",document.getElementById('DomainName').value,"code-fork","/administrator")
 	WLlinks = WLlinks + WriteOneLink("http://","/cpanel",document.getElementById('DomainName').value,"cogs","cPanel")
 	WLlinks = WLlinks + WriteOneLink("https://developers.google.com/speed/pagespeed/insights/?url=","&tab=desktop",document.getElementById('DomainName').value,"google","Google PageSpeed Tools")
 	WLlinks = WLlinks + WriteOneLink("https://moz.com/researchtools/ose/links?site=","",document.getElementById('DomainName').value,"bar-chart","Domain Authority rank")

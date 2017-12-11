@@ -14,7 +14,7 @@ function WriteLinks(IDtoWrite) {
 	var DomName = document.getElementById('DomainName').value;
 	WLlinks = WriteOneLink("http://","",DomName,"globe","Open the website");
 	WLlinks = WLlinks + WriteOneLink("https://isitup.org/","",DomName,"podcast","Make sure the website is up")
-	WLlinks = WLlinks + WriteOneLink("https://www.google.co.uk/#q=","",PhoneNum,"google","Google")
+	WLlinks = WLlinks + WriteOneLink("https://www.google.co.uk/#q=","",DomName,"google","Google")
 	WLlinks = WLlinks + WriteOneLink("http://","/wp-admin",DomName,"wordpress","WordPress login")
 	WLlinks = WLlinks + WriteOneLink("http://","/admin",DomName,"code-fork","/admin")
 	WLlinks = WLlinks + WriteOneLink("http://","/administrator",DomName,"code-fork","/administrator")

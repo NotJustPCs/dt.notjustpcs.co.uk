@@ -27,6 +27,7 @@ function WriteLinks(IDtoWrite) {
 	WLlinks = WLlinks + WriteOneLink("http://dnstrails.com/#/domain/domain/","",DomName,"history","DNS History")
 	WLlinks = WLlinks + WriteOneLink("https://who.is/whois/","",DomName,"user-secret","Whois")
 	WLlinks = WLlinks + WriteOneLink("https://mxtoolbox.com/archive/?actionstring=mx:","&run=networktools",DomName,"envelope","MX Toolbox")
+	WLlinks = WLlinks + WriteOneLink("https://www.blacklistmaster.com/check?t=","",DomName,"ban","Blacklist check")
 	WLlinks = WLlinks + WriteOneLink("https://mxtoolbox.com/archive/?actionstring=blacklist:","",DomName,"ban","Blacklist check (MX Toolbox)")
 	WLlinks = WLlinks + WriteOneLink("https://mxtoolbox.com/SuperTool.aspx?action=https%3a","&run=toolpage",DomName,"lock","MX Toolbox (SSL Check)")
 	WLlinks = WLlinks + WriteOneLink("https://www.ssllabs.com/ssltest/analyze.html?d=","&hideResults=on&latest",DomName,"shield","SSL Server Test")

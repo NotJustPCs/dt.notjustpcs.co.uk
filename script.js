@@ -20,6 +20,7 @@ function WriteLinks(IDtoWrite) {
 	WLlinks = WLlinks + WriteOneLink("http://","/administrator",DomName,"code-fork","/administrator")
 	WLlinks = WLlinks + WriteOneLink("http://","/cpanel",DomName,"cogs","cPanel")
 	WLlinks = WLlinks + WriteOneLink("https://developers.google.com/speed/pagespeed/insights/?url=","&tab=desktop",DomName,"google","Google PageSpeed Tools")
+	WLlinks = WLlinks + WriteOneLink("https://validator.w3.org/nu/?doc=","",DomName,"code","Nu Html Checker")
 	WLlinks = WLlinks + WriteOneLink("https://moz.com/researchtools/ose/links?site=","",DomName,"bar-chart","Domain Authority rank")
 	WLlinks = WLlinks + WriteOneLink("https://realfavicongenerator.net/favicon_checker?site=","",DomName,"eye","Check sites favicon")
 	WLlinks = WLlinks + WriteOneLink("http://quirktools.com/screenfly/#u=http%3A//","&w=320&h=568&a=37",DomName,"tablet","Open website (as an iPhone 5)")

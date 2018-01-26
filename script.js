@@ -32,7 +32,7 @@ function WriteLinks(IDtoWrite) {
 	WLlinks = WLlinks + WriteOneLink("https://mxtoolbox.com/SuperTool.aspx?action=spf%3a","&run=toolpage",DomName,"telegram","SPF Record (MX Toolbox)")
 	WLlinks = WLlinks + WriteOneLink("https://www.blacklistmaster.com/check?t=","",DomName,"ban","Blacklist check")
 	WLlinks = WLlinks + WriteOneLink("https://mxtoolbox.com/archive/?actionstring=blacklist:","",DomName,"ban","Blacklist check (MX Toolbox)")
-	WLlinks = WLlinks + WriteOneLink("https://mxtoolbox.com/SuperTool.aspx?action=https%3a","&run=toolpage",DomName,"lock","MX Toolbox (SSL Check)")
+	WLlinks = WLlinks + WriteOneLink("https://mxtoolbox.com/SuperTool.aspx?action=https%3a","&run=toolpage",DomName,"lock","SSL Check (MX Toolbox)")
 	WLlinks = WLlinks + WriteOneLink("https://www.ssllabs.com/ssltest/analyze.html?d=","&hideResults=on&latest",DomName,"shield","SSL Server Test")
 	WLlinks = WLlinks + WriteOneLink("http://toolbar.netcraft.com/site_report?url=","",DomName,"list","Netcraft Site Report")
 	WLlinks = WLlinks + WriteOneLink("http://web.archive.org/web/*/","",DomName,"clock-o","Wayback Machine")

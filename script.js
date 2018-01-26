@@ -29,7 +29,7 @@ function WriteLinks(IDtoWrite) {
 	WLlinks = WLlinks + WriteOneLink("https://who.is/whois/","",DomName,"user-secret","Whois")
 	WLlinks = WLlinks + WriteOneLink("https://who.is/dns/","",DomName,"files-o","DNS records (Whois)")
 	WLlinks = WLlinks + WriteOneLink("https://mxtoolbox.com/archive/?actionstring=mx:","&run=networktools",DomName,"envelope","MX Toolbox")
-	WLlinks = WLlinks + WriteOneLink("https://mxtoolbox.com/SuperTool.aspx?action=spf%3a","&run=toolpage",DomName,"telegram","SPF Record")
+	WLlinks = WLlinks + WriteOneLink("https://mxtoolbox.com/SuperTool.aspx?action=spf%3a","&run=toolpage",DomName,"telegram","SPF Record (MX Toolbox)")
 	WLlinks = WLlinks + WriteOneLink("https://www.blacklistmaster.com/check?t=","",DomName,"ban","Blacklist check")
 	WLlinks = WLlinks + WriteOneLink("https://mxtoolbox.com/archive/?actionstring=blacklist:","",DomName,"ban","Blacklist check (MX Toolbox)")
 	WLlinks = WLlinks + WriteOneLink("https://mxtoolbox.com/SuperTool.aspx?action=https%3a","&run=toolpage",DomName,"lock","MX Toolbox (SSL Check)")

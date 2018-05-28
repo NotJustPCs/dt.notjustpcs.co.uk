@@ -25,7 +25,7 @@ function WriteLinks(IDtoWrite) {
 	WLlinks = WLlinks + WriteOneLink("https://realfavicongenerator.net/favicon_checker?site=","",DomName,"eye","Check sites favicon")
 	WLlinks = WLlinks + WriteOneLink("http://quirktools.com/screenfly/#u=http%3A//","&w=320&h=568&a=37",DomName,"tablet","Open website (as an iPhone 5)")
 	WLlinks = WLlinks + WriteOneLink("http://www.tcpiputils.com/domain-neighbors/","",DomName,"road","Domain Neighbours")
-	WLlinks = WLlinks + WriteOneLink("http://dnstrails.com/#/domain/domain/","",DomName,"history","DNS History")
+	WLlinks = WLlinks + WriteOneLink("https://securitytrails.com/domain/","/dns",DomName,"history","DNS History")
 	WLlinks = WLlinks + WriteOneLink("https://who.is/whois/","",DomName,"user-secret","Whois")
 	WLlinks = WLlinks + WriteOneLink("https://who.is/dns/","",DomName,"files-o","DNS records (Whois)")
 	WLlinks = WLlinks + WriteOneLink("http://","/webmail",DomName,"envelope-open","/webmail")

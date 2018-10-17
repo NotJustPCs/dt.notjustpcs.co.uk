@@ -12,6 +12,7 @@ function WriteOneLink(URLprefix,URLsuffix,TelNo,FAicon,LinkDesc) {
 
 function WriteLinks(IDtoWrite) {
 	var DomName = document.getElementById('DomainName').value;
+	var DomNameLessWs = String(DomName).replace(/^www\./,'');
 	WLlinks = WriteOneLink("http://","",DomName,"globe","Open the website");
 	WLlinks = WLlinks + WriteOneLink("https://isitup.org/","",DomName,"podcast","Make sure the website is up")
 	WLlinks = WLlinks + WriteOneLink("https://www.google.co.uk/#q=","",DomName,"google","Google")
@@ -43,6 +44,7 @@ function WriteLinks(IDtoWrite) {
 	WLlinks = WLlinks + WriteOneLink("http://web.archive.org/web/*/","",DomName,"clock-o","Wayback Machine")
 	WLlinks = WLlinks + WriteOneLink("https://sitecheck.sucuri.net/results/","",DomName,"bug","Sucuri Scan")
 	WLlinks = WLlinks + WriteOneLink("https://verify.cpanel.net/ipaddrs.cgi?ip=","",DomName,"id-card-o","cPanel License Check")
-	WLlinks = WLlinks + WriteOneLink("http://dt.notjustpcs.co.uk/?","",DomName,"link","Shortcut this page")
+	WLlinks = WLlinks + WriteOneLink("http://dt.notjustpcs.co.uk/?","",DomName,"link","This page")
+	WLlinks = WLlinks + WriteOneLink("http://dt.notjustpcs.co.uk/?","",DomNameLessWs,"link","This page, without the wwws")
 	document.getElementById(IDtoWrite).innerHTML = WLlinks;
 }

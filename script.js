@@ -43,6 +43,7 @@ function WriteLinks(IDtoWrite) {
 	WLlinks = WLlinks + WriteOneLink("http://toolbar.netcraft.com/site_report?url=","",DomName,"list","Netcraft Site Report")
 	WLlinks = WLlinks + WriteOneLink("http://web.archive.org/web/*/","",DomName,"clock-o","Wayback Machine")
 	WLlinks = WLlinks + WriteOneLink("https://sitecheck.sucuri.net/results/","",DomName,"bug","Sucuri Scan")
+	WLlinks = WLlinks + WriteOneLink("https://transparencyreport.google.com/safe-browsing/search?url=","",DomName,"life-ring","Google Safe Browsing Check")
 	WLlinks = WLlinks + WriteOneLink("https://verify.cpanel.net/ipaddrs.cgi?ip=","",DomName,"id-card-o","cPanel License Check")
 	WLlinks = WLlinks + WriteOneLink("http://dt.notjustpcs.co.uk/?","",DomName,"link","This page")
 	WLlinks = WLlinks + WriteOneLink("http://dt.notjustpcs.co.uk/?","",DomNameLessWs,"link","This page, without the wwws")

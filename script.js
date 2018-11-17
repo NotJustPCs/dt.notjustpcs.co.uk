@@ -45,6 +45,7 @@ function WriteLinks(IDtoWrite) {
 	WLlinks = WLlinks + WriteOneLink("https://sitecheck.sucuri.net/results/","",DomName,"bug","Sucuri Scan")
 	WLlinks = WLlinks + WriteOneLink("https://www.virustotal.com/#/domain/","",DomName,"search","VirusTotal Scan")
 	WLlinks = WLlinks + WriteOneLink("https://transparencyreport.google.com/safe-browsing/search?url=","",DomName,"life-ring","Google Safe Browsing Check")
+	WLlinks = WLlinks + WriteOneLink("https://quttera.com/sitescan/","",DomName,"heartbeat","Quttera Malware Scan")
 	WLlinks = WLlinks + WriteOneLink("https://verify.cpanel.net/ipaddrs.cgi?ip=","",DomName,"id-card-o","cPanel License Check")
 	WLlinks = WLlinks + WriteOneLink("http://dt.notjustpcs.co.uk/?","",DomName,"link","This page")
 	WLlinks = WLlinks + WriteOneLink("http://dt.notjustpcs.co.uk/?","",DomNameLessWs,"link","This page, without the wwws")

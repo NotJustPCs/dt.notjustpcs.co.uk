@@ -17,6 +17,7 @@ function WriteLinks(IDtoWrite) {
 	WLlinks = WLlinks + WriteOneLink("https://isitup.org/","",DomName,"podcast","Make sure the website is up")
 	WLlinks = WLlinks + WriteOneLink("https://www.google.co.uk/#q=","",DomName,"google","Google")
 	WLlinks = WLlinks + WriteOneLink("http://","/wp-admin",DomName,"wordpress","WordPress login")
+	WLlinks = WLlinks + WriteOneLink("http://wppluginchecker.earthpeople.se/?wordpress-site=","",DomName,"wordpress","WP Plugin Checker")
 	WLlinks = WLlinks + WriteOneLink("http://","/admin",DomName,"code-fork","/admin")
 	WLlinks = WLlinks + WriteOneLink("http://","/administrator",DomName,"code-fork","/administrator")
 	WLlinks = WLlinks + WriteOneLink("http://","/cpanel",DomName,"cogs","cPanel")

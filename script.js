@@ -40,6 +40,7 @@ function WriteLinks(IDtoWrite) {
 	WLlinks = WLlinks + WriteOneLink("https://toolbox.googleapps.com/apps/checkmx/check?domain=","",DomNameLessWs,"google","MX Toolbox (gSuite only)")
 	WLlinks = WLlinks + WriteOneLink("https://mxtoolbox.com/SuperTool.aspx?action=mx%3a","&run=toolpage",DomNameLessWs,"envelope","MX Toolbox")
 	WLlinks = WLlinks + WriteOneLink("https://mxtoolbox.com/SuperTool.aspx?action=spf%3a","&run=toolpage",DomNameLessWs,"telegram","SPF Record (MX Toolbox)")
+	WLlinks = WLlinks + WriteOneLink("http://multirbl.valli.org/lookup/",".html",DomName,"ban","Comprehensive Blacklist check")
 	WLlinks = WLlinks + WriteOneLink("https://www.blacklistmaster.com/check?t=","",DomName,"ban","Blacklist check")
 	WLlinks = WLlinks + WriteOneLink("https://mxtoolbox.com/SuperTool.aspx?action=blacklist%3a","",DomName,"ban","Blacklist check (MX Toolbox)")
 	WLlinks = WLlinks + WriteOneLink("https://mxtoolbox.com/SuperTool.aspx?action=https%3a","&run=toolpage",DomName,"lock","SSL Check (MX Toolbox)")

@@ -51,6 +51,7 @@ function WriteLinks(IDtoWrite) {
 	WLlinks = WLlinks + WriteOneLink("https://www.jitbit.com/sslcheck/#url=https://","",DomName,"exchange","SSL Mixed Content Test")
 	WLlinks = WLlinks + WriteOneLink("http://toolbar.netcraft.com/site_report?url=","",DomName,"list","Netcraft Site Report")
 	WLlinks = WLlinks + WriteOneLink("http://web.archive.org/web/*/","",DomName,"clock-o","Wayback Machine")
+	WLlinks = WLlinks + WriteOneLink("https://archive.is/","",DomName,"clock-o","archive.today - Alternative to Wayback Machine")
 	WLlinks = WLlinks + WriteOneLink("https://sitecheck.sucuri.net/results/","",DomName,"bug","Sucuri Scan")
 	WLlinks = WLlinks + WriteOneLink("https://www.virustotal.com/#/domain/","",DomName,"search","VirusTotal Scan")
 	WLlinks = WLlinks + WriteOneLink("https://transparencyreport.google.com/safe-browsing/search?url=","",DomName,"life-ring","Google Safe Browsing Check")

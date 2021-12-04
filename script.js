@@ -39,6 +39,7 @@ function WriteLinks(IDtoWrite) {
 	WLlinks = WLlinks + WriteOneLink("https://intodns.com/","",DomName,"files-o","DNS records (intoDNS)")
 	WLlinks = WLlinks + WriteOneLink("https://www.whatsmydns.net/#A/","",DomName,"check-circle-o","Check on DNS propagation")
 	WLlinks = WLlinks + WriteOneLink("https://www.whatsmydns.net/#A/","/89.145.100.25",DomName,"check-circle","Check on DNS propagation (to primary NJPC IP)")
+	WLlinks = WLlinks + WriteOneLink("https://dnsmap.io/#A/","",DomName,"check-circle-o","Check on DNS A record IPs")
 	WLlinks = WLlinks + WriteOneLink("http://","/webmail",DomName,"envelope-open","/webmail")
 	WLlinks = WLlinks + WriteOneLink("https://geopeeker.com/fetch/?url=","",DomName,"globe","GeoPeeker")
 	WLlinks = WLlinks + WriteOneLink("https://toolbox.googleapps.com/apps/checkmx/check?domain=","",DomNameLessWs,"google","MX Toolbox (gSuite only)")

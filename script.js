@@ -15,7 +15,7 @@ function WriteLinks(IDtoWrite) {
 	var DomNameLessWs = String(DomName).replace(/^www\./,'');
 	WLlinks = WriteOneLink("http://","",DomName,"globe","Open the website (http)");
 	WLlinks = WriteOneLink("https://","",DomName,"globe","Open the website (https)");
-	WLlinks = WLlinks + WriteOneLink("https://isitup.org/","",DomName,"podcast","Make sure the website is up")
+	WLlinks = WLlinks + WriteOneLink("https://sitechecker.pro/website-down-app/","",DomName,"podcast","Make sure the website is up")
 	WLlinks = WLlinks + WriteOneLink("https://www.google.co.uk/#q=","",DomName,"google","Google")
 	WLlinks = WLlinks + WriteOneLink("https://www.google.co.uk/#q=site:","",DomName,"google","Google Site Search")
 	WLlinks = WLlinks + WriteOneLink("http://","/wp-admin",DomName,"wordpress","WordPress login")

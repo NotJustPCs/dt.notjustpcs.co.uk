@@ -15,9 +15,9 @@ function WriteLinks(IDtoWrite) {
 	var DomNameLessWs = String(DomName).replace(/^www\./,'');
 	WLlinks = WriteOneLink("http://","",DomName,"globe","Open the website (http)");
 	WLlinks = WriteOneLink("https://","",DomName,"globe","Open the website (https)");
-	WLlinks = WLlinks + WriteOneLink("https://sitechecker.pro/website-down-app/","",DomName,"podcast","Make sure the website is up")
-	WLlinks = WLlinks + WriteOneLink("https://www.google.co.uk/#q=","",DomName,"google","Google")
-	WLlinks = WLlinks + WriteOneLink("https://www.google.co.uk/#q=site:","",DomName,"google","Google Site Search")
+	WLlinks = WLlinks + WriteOneLink("https://onlineornot.com/website-down-checker?url=","",DomName,"podcast","Make sure the website is up")
+	WLlinks = WLlinks + WriteOneLink("https://www.google.com/search?q=","&udm=14",DomName,"google","Google")
+	WLlinks = WLlinks + WriteOneLink("https://www.google.com/search?q=site%3A","&udm=14",DomName,"google","Google Site Search")
 	WLlinks = WLlinks + WriteOneLink("http://","/wp-admin",DomName,"wordpress","WordPress login")
 	WLlinks = WLlinks + WriteOneLink("http://","/?q=user/login",DomName,"drupal","Drupal login")
 	WLlinks = WLlinks + WriteOneLink("http://wppluginchecker.earthpeople.se/?wordpress-site=","",DomName,"wordpress","WP Plugin Checker")
@@ -30,7 +30,7 @@ function WriteLinks(IDtoWrite) {
 	WLlinks = WLlinks + WriteOneLink("https://validator.w3.org/nu/?doc=http%3A%2F%2F","",DomName,"code","Nu Html Checker")
 	WLlinks = WLlinks + WriteOneLink("https://moz.com/domain-analysis?site=","",DomName,"bar-chart","Domain Authority rank")
 	WLlinks = WLlinks + WriteOneLink("https://realfavicongenerator.net/favicon_checker?site=","",DomName,"eye","Check sites favicon")
-	WLlinks = WLlinks + WriteOneLink("http://quirktools.com/screenfly/#u=http%3A//","&w=320&h=568&a=37",DomName,"tablet","Open website (as an iPhone 5)")
+	//WLlinks = WLlinks + WriteOneLink("http://quirktools.com/screenfly/#u=http%3A//","&w=320&h=568&a=37",DomName,"tablet","Open website (as an iPhone 5)")
 	//WLlinks = WLlinks + WriteOneLink("http://www.tcpiputils.com/domain-neighbors/","",DomName,"road","Domain Neighbours")
 	WLlinks = WLlinks + WriteOneLink("https://securitytrails.com/domain/","/dns",DomName,"history","DNS History")
 	WLlinks = WLlinks + WriteOneLink("https://www.gandi.net/whois/details/?search=","",DomNameLessWs,"registered","Whois (gandi)")
@@ -42,7 +42,7 @@ function WriteLinks(IDtoWrite) {
 	WLlinks = WLlinks + WriteOneLink("https://dnsmap.io/#A/","",DomName,"check-circle-o","Check on DNS A record IPs")
 	WLlinks = WLlinks + WriteOneLink("http://","/webmail",DomName,"envelope-open","/webmail")
 	WLlinks = WLlinks + WriteOneLink("https://geopeeker.com/fetch/?url=","",DomName,"globe","GeoPeeker")
-	WLlinks = WLlinks + WriteOneLink("https://toolbox.googleapps.com/apps/checkmx/check?domain=","",DomNameLessWs,"google","MX Toolbox (gSuite only)")
+	//WLlinks = WLlinks + WriteOneLink("https://toolbox.googleapps.com/apps/checkmx/check?domain=","",DomNameLessWs,"google","MX Toolbox (gSuite only)")
 	WLlinks = WLlinks + WriteOneLink("https://mxtoolbox.com/SuperTool.aspx?action=mx%3a","&run=toolpage",DomNameLessWs,"envelope","MX Toolbox")
 	WLlinks = WLlinks + WriteOneLink("https://mxtoolbox.com/SuperTool.aspx?action=spf%3a","&run=toolpage",DomNameLessWs,"telegram","SPF Record (MX Toolbox)")
 	WLlinks = WLlinks + WriteOneLink("https://easydmarc.com/tools/dmarc-record-generator?domain=","",DomNameLessWs,"handshake-o","DMARC Record Generator")
@@ -54,7 +54,7 @@ function WriteLinks(IDtoWrite) {
 	WLlinks = WLlinks + WriteOneLink("https://www.jitbit.com/sslcheck/#url=https://","",DomName,"exchange","SSL Mixed Content Test")
 	WLlinks = WLlinks + WriteOneLink("http://toolbar.netcraft.com/site_report?url=","",DomName,"list","Netcraft Site Report")
 	WLlinks = WLlinks + WriteOneLink("http://",".cutestat.com",DomName,"list","CuteStat Site Report")
-	WLlinks = WLlinks + WriteOneLink("https://csi.forcepoint.com/Report/Lookup?url=","",DomName,"user-secret","Forcepoint Threat Assessment")
+	//WLlinks = WLlinks + WriteOneLink("https://csi.forcepoint.com/Report/Lookup?url=","",DomName,"user-secret","Forcepoint Threat Assessment")
 	WLlinks = WLlinks + WriteOneLink("http://web.archive.org/web/*/","",DomName,"clock-o","Wayback Machine")
 	WLlinks = WLlinks + WriteOneLink("https://archive.is/","",DomName,"clock-o","archive.today - Alternative to Wayback Machine")
 	WLlinks = WLlinks + WriteOneLink("https://sitecheck.sucuri.net/results/","",DomName,"bug","Sucuri Scan")
@@ -62,6 +62,7 @@ function WriteLinks(IDtoWrite) {
 	WLlinks = WLlinks + WriteOneLink("https://transparencyreport.google.com/safe-browsing/search?url=","",DomName,"life-ring","Google Safe Browsing Check")
 	WLlinks = WLlinks + WriteOneLink("https://quttera.com/sitescan/","",DomName,"heartbeat","Quttera Malware Scan")
 	WLlinks = WLlinks + WriteOneLink("https://verify.cpanel.net/ipaddrs.cgi?ip=","",DomName,"id-card-o","cPanel License Check")
+	WLlinks = WLlinks + WriteOneLink("https://brandfetch.com/","",DomName,"picture-o","Brandfetch")
 	WLlinks = WLlinks + WriteOneLink("http://dt.notjustpcs.co.uk/?","",DomName,"link","This page")
 	WLlinks = WLlinks + WriteOneLink("http://dt.notjustpcs.co.uk/?","",DomNameLessWs,"link","This page, without the wwws")
 	document.getElementById(IDtoWrite).innerHTML = WLlinks;
